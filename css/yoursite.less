@@ -1,0 +1,249 @@
+@kefei: #584034;
+@dankafei: #9D6652;
+@shenglv: #485A28;
+@qianlv: #8EB34C;
+@qinglv:#C8D5A9;
+.clear{
+    
+    clear:both;
+}
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+//  background-image: url("../img/作业.jpg");
+    
+    background-repeat: no-repeat;
+}
+.zhong {
+    width: 918px;
+    padding: 55px 20px 20px 50px;
+    margin: 0 auto;
+    /*background-color: powderblue;*/
+   background-image: url("../img/bg.png");
+   background-size: content;
+}
+.shawdownfun(@width:60px,@height:10px,@top:40px,@left:30px){
+            width: @width;
+            height: @height;
+            border-radius: 50%; //     visibility: hidden;
+            background: radial-gradient(#000,#fff);
+             //              background-color:rgba(0,0,0,0.3);
+            z-index: 100; //     box-shadow:45px 50px 10px 2px #9FA893;
+            opacity: 0.2;
+            position: absolute;
+            top: @top;
+            left: @left;
+            transform: rotate(5deg);
+            -webkit-transform: rotate(5deg);
+        }
+header {
+    padding-left: 50px;
+    .top {
+        .top_right {
+            float: right;
+            color: #544234;
+            font-size: 20px;
+        }
+    }
+    .nav {
+        margin-top: 27px;
+        margin-left: 20px;
+    }
+    .menuBG {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        position: relative;
+        overflow: visible;
+        float: left;
+        margin-right: 65px;
+        .shawdown{
+            .shawdownfun();
+        }
+        .menu-text {
+            position: absolute;
+            top: 20px;
+            left: 28px;
+            width: 100%;
+        }
+    }
+    .menu-1 {
+        background-color: @kefei;
+        color: @dankafei;
+    }
+    .menu-2 {
+        background-color: @dankafei;
+        color: @kefei;
+    }
+    .menu-3 {
+        background-color: #986339;
+        color: @kefei;
+    }
+    .menu-4 {
+        background-color: @shenglv;
+        color: @qianlv;
+    }
+    .menu-5 {
+        background-color: @qianlv;
+        color: @shenglv;
+    }
+}
+main {
+    .carousel-position {
+        margin-top: 50px;
+        #mycarousel {
+            width: 370px;
+            height: 210px;
+            .carousel-indicators {
+                left: 60%;
+            }
+            .carousel-indicators li {
+                width: 8px;
+                height: 8px;
+                margin: 2px;
+                background-color: #000;
+                background-color: @kefei;
+                border: none; //border-radius: 10px;
+            }
+            .carousel-indicators .active {
+                border: 5px solid @kefei;
+            }
+            .yuan{
+                position:relative;
+                width:200px;
+                height:200px;
+               background-color: @qinglv;  
+               border:2px solid @kefei;
+               border-radius:50%;
+               left:90px;
+            }
+            .news {
+                position: relative;
+                width: 150px;
+//              right: 30%;
+                left: 18%;
+                z-index: 10;
+                padding-top: 34px;
+                padding-bottom: 20px; 
+//              background-color: red;
+                h4 {
+                    color: @kefei;
+                    font-weight: bold;
+                }
+                p {
+                    width: 110px;
+                    margin-left: 10px;
+                    word-wrap: break-word;
+                    text-indent: 2rem;
+                    font-size: 9px;
+                }
+            }
+            .carousel-control-text{
+                
+                position: relative;
+                color: @kefei;
+                font-size: 30px;
+                top:65px;
+                left:5px;
+            }
+            .myleft{
+                
+                
+            }
+            .myright{
+                
+                 right: 0;
+                left: auto;
+            }
+        }
+    }
+    .footer-position{
+        margin-top: 45px;
+        margin-left: 38px;
+//      background-color: red;
+        position:relative;
+        .yuan-play{
+            float: left;
+            .yuan{
+                
+                width:290px;
+                height:290px;
+                border-radius: 50%;
+                 background-color: @qinglv;
+                 border:3px solid @qinglv;
+                .yuan-context{
+//                  background-color:red;
+                    width:150px;
+                    margin:45px auto;
+                    font-size:20px;
+                    ul{
+                        list-style:none;
+                        padding-left:20px;
+                        
+                        li{
+                            margin-bottom:12px;
+                            
+                            a{
+                            margin-left:10px;
+                            color:@kefei;
+                        }
+                        }
+                        
+                    }
+                } 
+                 
+                 
+            }
+            .yuan-shawdown{
+                
+                .shawdownfun(300px,50px,300px,0);
+//               background: radial-gradient(#362418,#473328);
+            }
+            
+        }
+        .aboutAs{
+            width:400px;
+            float: left;
+            margin-left: 93px;
+            margin-top: 22px;
+//          background-color: red;
+            .aboutAs-title{
+                h4{
+                    font-size: 22px;
+                    font-weight: 900;
+                    color: @qinglv;
+                }
+                
+            }
+            
+            .aboutAs-content{
+                
+                .context{
+                    float:left;
+                   p{
+                      
+                    width: 180px;
+                    margin-left: 5px;
+                    word-wrap: break-word;
+                    font-size: 9px;
+                    color: @qinglv;
+//                  text-indent: 2rem;
+                   } 
+                    
+                }
+                
+            }
+        }
+        .aboutAs-shawdown
+        {
+            .shawdownfun(300px,50px,300px,400px);
+                 background: radial-gradient(#362418,#473328);
+            
+        }
+    }
+}
